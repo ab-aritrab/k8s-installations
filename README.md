@@ -96,7 +96,9 @@ sudo systemctl restart docker
 sudo kubeadm reset
 
 
-*** Master node only ***
+*** Master commands to Master-node only ***
+============================================
+
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
 <<<<<<<<<<---------------------------
@@ -179,7 +181,14 @@ ansadmin@kmaster1:~$
 --------------->>>>>>>>>>>>>>>>>>>>>>
 
 
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+kubectl get pods --all-namespaces               // to ckeck flannel network is running
+sudo kubectl get nodes       // check nods are joiend or not after below commands run.
+
 **** RUN from ALL Worker Nodes Only ****
+========================================
+
 Then you can join any number of worker nodes by running the following on each as root:
 sudo kubeadm join 10.50.2.10:6443 --token kzhvpw.9x5zc1mpizazk6do --discovery-token-ca-cert-hash sha256:56bbb9990ddecad3865da4e99046eca380ecc282db9cf2b8d1b1995127d9d244
 
