@@ -1,6 +1,10 @@
 Installation by "Data Science Garage": https://www.youtube.com/watch?v=SQJxYhfzznU
 https://github.com/vb100/Deploy_Kubernetes_AWS_EC2/blob/main/README.md
 
+
+________
+**EKS- Repo- Udemy-Tutorials**
+**https://github.com/DickChesterwood/k8s-fleetman**
 ```
 ==========+++++++++=============
 STATIC IP:
