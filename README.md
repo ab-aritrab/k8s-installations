@@ -57,6 +57,11 @@ HOSTS ENTRIES:
 10.50.2.13	knode2		knode2.aritrabiswas.com
 10.50.2.14	knode3		knode3.aritrabiswas.com
 
+10.50.2.10      kmaster1        kmaster1.welkintec.com
+10.50.2.12      knode1          knode1.welkintec.com
+10.50.2.13      knode2          knode2.welkintec.com
+10.50.2.14      knode3          knode3.welkintec.com
+
 ==========+++++++++=============
 Add user & make the user to perform SUDO job:  //all of the servers
 
